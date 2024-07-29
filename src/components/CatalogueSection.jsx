@@ -23,7 +23,7 @@ const catalogueItems = [
 
 function CatalogueSection() {
   return (
-    <section id="catalogue" className="catalogue-section pt-5 pb-5">
+    <section id="catalogue" className="catalogue-section pt-5 pb-5 ">
       <Container>
         <Row>
           <Col className="text-center mb-4">
@@ -34,7 +34,7 @@ function CatalogueSection() {
         </Row>
         <Row className="mt-5 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center">
           {catalogueItems.map((item, index) => (
-            <Col key={index} className="d-flex justify-content-center mb-4">
+            <Col key={index} className="d-flex justify-content-center mb-4 z-0">
               <div className="catalogue-card">
                 <div className="icon-wrapper">
                   <i className={`fa ${item.icon}`}></i>
