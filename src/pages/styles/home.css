@@ -1,0 +1,32 @@
+.floating-icons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .floating-icons .icon {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .floating-icons .icon:hover {
+    background-color: #128C7E; /* Darker green for hover effect */
+  }
+  
+  .floating-icons .icon:first-of-type {
+    background-color: #34b7f1; /* Call icon color */
+  }
+  
+  .floating-icons .icon:first-of-type:hover {
+    background-color: #0091D1; /* Darker blue for hover effect */
+  }
+  

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-wrapper {
+    position: relative;
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: #fff; 
+    max-width: 80%; 
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem; 
+    margin-bottom: 20px;
+}
+
+.carousel-caption .button-group {
+    margin-top: 20px; 
+}
+
+.carousel-caption .btn {
+    margin: 0 5px; /* Adjust button spacing */
+    padding: 10px 20px; /* Adjust button padding */
+}
+
+/* Custom styles for carousel controls */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Adjust the width of the controls */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Background color for the icons */
+    border-radius: 50%; /* Rounded buttons */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Extra Small Devices (Phones, 600px and down) */
+@media (max-width: 600px) {
+    .carousel-item .video {
+        min-height: 300px; /* Adjust minimum height for small screens */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem; /* Adjust font size for headings */
+    }
+
+    .carousel-caption p {
+        font-size: 0.875rem; /* Adjust font size for paragraph text */
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.75rem; /* Adjust button font size */
+        margin: 0 3px; /* Adjust button spacing */
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%; /* Slightly wider controls for smaller screens */
+    }
+    .carousel-caption{
+        width: 100%;
+    }
+}
+
+/* Small Devices (Tablets, 600px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .carousel-item .video {
+        min-height: 350px; /* Adjust minimum height for medium screens */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.75rem; /* Adjust font size for headings */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Adjust font size for paragraph text */
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.875rem; /* Adjust button font size */
+        margin: 0 5px; /* Adjust button spacing */
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 8%; /* Adjust controls for medium screens */
+    }
+}
+
+/* Medium Devices (Laptops, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .carousel-item .video {
+        min-height: 400px; /* Adjust minimum height for larger screens */
+    }
+
+    .carousel-caption h5 {
+        font-size: 2rem; /* Adjust font size for headings */
+    }
+
+    .carousel-caption p {
+        font-size: 1.125rem; /* Adjust font size for paragraph text */
+    }
+
+    .carousel-caption .btn {
+        font-size: 1rem; /* Adjust button font size */
+        margin: 0 8px; /* Adjust button spacing */
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 6%; /* Adjust controls for larger screens */
+    }
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carousel-item .video {
+        min-height: 500px; /* Adjust minimum height for large screens */
+    }
+
+    .carousel-caption h5 {
+        font-size: 2.5rem; /* Adjust font size for headings */
+    }
+
+    .carousel-caption p {
+        font-size: 1.25rem; /* Adjust font size for paragraph text */
+    }
+
+    .carousel-caption .btn {
+        font-size: 1.125rem; /* Adjust button font size */
+        margin: 0 10px; /* Adjust button spacing */
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 5%;
+    }
+}
