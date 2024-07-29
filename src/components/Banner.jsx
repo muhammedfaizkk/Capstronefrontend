@@ -28,7 +28,7 @@ const Banner = () => {
 
                 <Carousel.Item>
                     <video className="d-block w-100 video" autoPlay loop muted>
-                        <source src={`${process.env.PUBLIC_URL}/videos/bennervideotwo.mp4`} type="video/mp4" />
+                        <source src={`${process.env.PUBLIC_URL}/videos/bannervideotow.mp4`} type="video/mp4" />
                     </video>
                     <div className="overlay"></div>
                     <Carousel.Caption>
