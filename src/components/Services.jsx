@@ -30,16 +30,10 @@ function Services() {
   ];
   return (
     <Container className="service-section py-5">
-      {/* <Row>
-        <Col xs={12}>
-          <div className="why_choose_head">
-            <h1>O<span>UR SERVIC</span>E US?</h1>
-          </div>
-        </Col>
-      </Row> */}
+    
       <Row>
         {services.map((service, index) => (
-          <Col key={index} xs={12} sm={6} md={3} className="mb-4">
+          <Col key={index} xs={12} sm={6} md={3} className="mb-5">
             <Card className="h-100 text-center service-card">
               <Card.Body>
                 <div className="service-icon mb-3">{service.icon}</div>
