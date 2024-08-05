@@ -6,6 +6,7 @@
     font-style: normal;
 }
 
+/* Default navbar styles */
 .navboot {
     background-color: transparent !important;
     color: white !important;
@@ -14,18 +15,35 @@
     z-index: 1000;
 }
 
+/* Home-specific styles */
+.home-nav {
+    background-color: transparent !important;
+    color: white !important;
+    /* Add any additional styles for the Home route */
+}
+
+/* About-specific styles */
+.about-nav {
+    background-color: black !important;
+    color: white !important;
+    /* Add any additional styles for the About route */
+}
+
+/* Logo styling */
 .nav-logo {
     width: 200px;
     height: auto;
     overflow: hidden;
 }
 
+/* Navbar link styles */
 .navboot .nav-link {
     color: white !important;
     position: relative;
     transition: all 0.3s ease;
 }
 
+/* Hover effect on navbar links */
 .navboot .nav-link::after {
     content: "";
     position: absolute;
@@ -44,6 +62,7 @@
     background: white;
 }
 
+/* Navbar toggler styles for small screens */
 .navboot .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E') !important;
 }
@@ -53,11 +72,13 @@
     color: white !important;
 }
 
+/* Banner wrapper styling */
 .banner-wrapper {
     position: relative;
     z-index: 1;
 }
 
+/* Carousel item styling */
 .carousel-item {
     position: relative;
 }
@@ -67,6 +88,7 @@
     height: auto;
 }
 
+/* Overlay styling */
 .overlay {
     position: absolute;
     top: 0;
@@ -77,6 +99,7 @@
     z-index: 1;
 }
 
+/* Fixed-top customization */
 .fixed-top {
     position: absolute !important;
 }

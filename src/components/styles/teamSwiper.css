@@ -1,0 +1,137 @@
+.team-boxed {
+    color: #313437;
+}
+
+.team-boxed .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.team-boxed h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+.team-boxed .item {
+    text-align: center;
+}
+
+.team-boxed .item .box {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    overflow: hidden; /* Ensure that the image doesn't overflow */
+}
+
+/* Hover effect for card */
+.team-boxed .item:hover .box {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.team-boxed .item .name {
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    color: inherit;
+}
+
+.team-boxed .item .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #d0d0d0;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.team-boxed .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.team-boxed .item img {
+    max-width: 210px;
+    border-radius: 50%; /* Make images circular */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.box:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    transform: scale(1.1); /* Slightly enlarge the image */
+}
+
+.team-boxed .social {
+    font-size: 18px;
+    color: #000; /* Icons black color */
+}
+
+.team-boxed .social a {
+    color: inherit;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Hover effect for social icons */
+.team-boxed .social a:hover {
+    opacity: 1;
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+
+/* Swiper Customizations */
+.team-swiper {
+    position: relative; /* Ensure relative positioning for swiper container */
+}
+
+.team-swiper .swiper-button-next,
+.team-swiper .swiper-button-prev {
+    background-color: black; /* Set background color to black */
+    border-radius: 50%; /* Round the button */
+    width: 40px; /* Adjust the width */
+    height: 40px; /* Adjust the height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+    position: absolute; /* Position absolutely within the swiper container */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact centering */
+    padding: 10px;
+}
+
+.team-swiper .swiper-button-next {
+    right: 10px; /* Position to the right */
+}
+
+.team-swiper .swiper-button-prev {
+    left: 10px; /* Position to the left */
+}
+
+.team-swiper .swiper-button-next::after,
+.team-swiper .swiper-button-prev::after {
+    font-size: 25px !important; /* Set font size to 25px */
+    color: white !important; /* Set icon color to white */
+}
+
+.team-boxed:hover .swiper-button-next,
+.team-boxed:hover .swiper-button-prev {
+    opacity: 0.8;
+}
+
+.team-swiper .swiper-pagination-bullet {
+    display: none !important; /* Remove pagination bullets */
+}
+
+.swiper-button-lock {
+    display: block !important;
+}

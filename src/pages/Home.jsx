@@ -12,13 +12,12 @@ import './styles/home.css'; // Create this CSS file for custom styles
 function Home() {
   return (
     <>
-      <Navcap/>
       <Banner/>
       <Services/>
       <CatalogueSection/>
       <WhyChooseUs/>
       <CustomerTestimonials/>
-      <Footer/>
+      
 
       {/* Floating Icons */}
       <div className="floating-icons">

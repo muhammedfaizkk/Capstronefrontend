@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.about-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif; /* Default font for body text */
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-heading {
+  font-family: 'Playfair Display', serif; /* Example font style for heading */
+  font-size: 2rem; /* Adjusted font size */
+  font-weight: 700; /* Bold */
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 1rem; /* Font size for body text */
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content, .about-image {
+    padding: 10px;
+  }
+
+  .about-heading {
+    font-size: 1.5rem; /* Adjusted font size for smaller screens */
+  }
+
+  .about-content p {
+    font-size: 0.875rem; /* Smaller font size for body text on smaller screens */
+  }
+}
