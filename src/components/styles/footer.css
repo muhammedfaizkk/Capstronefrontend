@@ -1,43 +1,43 @@
-.bg-body-tertiary {
-  background-color: red;
+.footer-bg {
+  background-color:#f5f5f5;
 }
 
-.text-muted {
+.footer-text-muted {
   color: #6c757d;
 }
 
-.text-reset {
+.footer-text-reset {
   color: inherit;
   text-decoration: none;
 }
 
-.text-reset:hover {
+.footer-text-reset:hover {
   color: #0056b3;
   /* Adjust the color for hover */
 }
 
-.text-uppercase {
+.footer-text-uppercase {
   text-transform: uppercase;
 }
 
-.fw-bold {
+.footer-fw-bold {
   font-weight: bold;
 }
 
-.me-4 {
+.footer-margin-right {
   margin-right: 1.5rem;
 }
 
-.border-bottom {
+.footer-border-bottom {
   border-bottom: 1px solid #dee2e6;
 }
 
-.container {
+.footer-container {
   max-width: 1200px;
 }
 
 /* Add border and animation to icons */
-.icon-hover {
+.footer-icon-hover {
   transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -53,7 +53,7 @@
 }
 
 /* Hover effects */
-.icon-hover:hover {
+.footer-icon-hover:hover {
   transform: translateY(-5px) scale(1.1);
   /* Moves the icon up and scales it */
   color: #007bff;
@@ -67,8 +67,8 @@
 }
 
 /* Optional: Add a pulse effect on hover */
-.icon-hover:focus,
-.icon-hover:active {
+.footer-icon-hover:focus,
+.footer-icon-hover:active {
   animation: pulse 1s infinite;
 }
 
@@ -92,20 +92,24 @@
   }
 }
 
+.footer-col {
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 768px) {
-  .text-md-start {
+  .footer-text-md-start {
     text-align: center;
   }
 
-  .me-5 {
+  .footer-margin-left {
     margin-right: 0;
   }
 
-  .text-center {
+  .footer-text-center {
     text-align: center;
   }
 
-  .mb-md-0 {
+  .footer-mb-md-0 {
     margin-bottom: 1.5rem;
   }
 }

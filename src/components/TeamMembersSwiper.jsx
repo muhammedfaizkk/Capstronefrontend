@@ -70,7 +70,7 @@ const TeamMembersSwiper = () => {
         <section className="team-boxed">
             <div className="container">
                 <div className="intro">
-                    <h2 className="text-center">Team Cards</h2>
+                    <h2 className="text-center">Meet Our Team</h2>
                 </div>
                 <Swiper
                     spaceBetween={30}

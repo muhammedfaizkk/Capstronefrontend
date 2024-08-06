@@ -5,84 +5,81 @@ import './styles/footer.css'; // Ensure this CSS file is created and included
 
 const Footer = () => {
   return (
-    <footer className="bg-body-tertiary text-muted">
+    <footer className="footer-bg text-muted">
       {/* Section: Social media */}
-      <section className="p-4 border-bottom">
+      <section className="p-4 footer-border-bottom">
         <Container className="d-flex justify-content-between align-items-center">
           {/* Left */}
-          <div className="me-5 d-none d-lg-block">
+          <div className="footer-margin-right d-none d-lg-block">
             <span>Get connected with us on social networks:</span>
           </div>
           {/* Right */}
           <div className="d-flex">
-            <a href="#" className="me-4 text-reset icon-hover">
+            <a href="#" className="footer-margin-right footer-text-reset footer-icon-hover">
               <FaFacebookF />
             </a>
-            <a href="#" className="me-4 text-reset icon-hover">
+            <a href="#" className="footer-margin-right footer-text-reset footer-icon-hover">
               <FaTwitter />
             </a>
-            <a href="#" className="me-4 text-reset icon-hover">
+            <a href="#" className="footer-margin-right footer-text-reset footer-icon-hover">
               <FaGoogle />
             </a>
-            <a href="#" className="me-4 text-reset icon-hover">
+            <a href="#" className="footer-margin-right footer-text-reset footer-icon-hover">
               <FaInstagram />
             </a>
           </div>
         </Container>
       </section>
 
-      {/* Section: Links */}
-      <section>
-        <Container className="text-center text-md-start mt-5">
+      {/* Section: Footer content */}
+      <section className='pt-5'>
+        <Container className="footer-text-center">
           <Row>
-            {/* Grid column */}
-            <Col md={3} lg={4} xl={3} className="mb-4">
+            {/* Column 1 */}
+            <Col md={3} className="footer-col">
               <h5 className="footer-heading">Capstrone</h5>
               <p>
                 Discover a wide range of bathfits items. Explore our latest collections and find the perfect fit for your bath spaces.
               </p>
             </Col>
 
-            {/* Grid column */}
-            <Col md={2} lg={2} xl={3} className="mb-4">
-              {/* Links */}
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+            {/* Column 2 */}
+            <Col md={3} className="footer-col">
+              <h6 className="footer-text-uppercase footer-fw-bold mb-4">Products</h6>
               <p>
-                <a href="#!" className="text-reset">Shower Heads</a>
+                <a href="#!" className="footer-text-reset">Shower Heads</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">Taps</a>
+                <a href="#!" className="footer-text-reset">Taps</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">Accessories</a>
+                <a href="#!" className="footer-text-reset">Accessories</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">Best Sellers</a>
-              </p>
-            </Col>
-
-            {/* Grid column */}
-            <Col md={3} lg={2} xl={3} className="mb-4">
-              {/* Links */}
-              <h6 className="text-uppercase fw-bold mb-4">Useful Links</h6>
-              <p>
-                <a href="#!" className="text-reset">Installation Guide</a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">Returns & Exchanges</a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">Shipping Information</a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">Contact Us</a>
+                <a href="#!" className="footer-text-reset">Best Sellers</a>
               </p>
             </Col>
 
-            {/* Grid column */}
-            <Col md={4} lg={3} xl={3} className="mb-md-0 mb-4">
-              {/* Contact */}
-              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+            {/* Column 3 */}
+            <Col md={3} className="footer-col">
+              <h6 className="footer-text-uppercase footer-fw-bold mb-4">Useful Links</h6>
+              <p>
+                <a href="#!" className="footer-text-reset">Installation Guide</a>
+              </p>
+              <p>
+                <a href="#!" className="footer-text-reset">Returns & Exchanges</a>
+              </p>
+              <p>
+                <a href="#!" className="footer-text-reset">Shipping Information</a>
+              </p>
+              <p>
+                <a href="#!" className="footer-text-reset">Contact Us</a>
+              </p>
+            </Col>
+
+            {/* Column 4 */}
+            <Col md={3} className="footer-col">
+              <h6 className="footer-text-uppercase footer-fw-bold mb-4">Contact</h6>
               <p><i className="fas fa-home me-3"></i> 123 Bath Street, Bath City</p>
               <p>
                 <i className="fas fa-envelope me-3"></i>
@@ -98,7 +95,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="text-center p-4" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2024 Copyright:
-        <a className="text-reset fw-bold" href="https://example.com">capstrone@gmail.com</a>
+        <a className="footer-text-reset footer-fw-bold" href="https://example.com">capstrone@gmail.com</a>
       </div>
     </footer>
   );

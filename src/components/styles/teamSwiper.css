@@ -64,8 +64,10 @@
 
 
 .box:hover{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
     transform: scale(1.1); /* Slightly enlarge the image */
+}
+.box{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
 }
 
 .team-boxed .social {

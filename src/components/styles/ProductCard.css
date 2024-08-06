@@ -1,0 +1,136 @@
+.product-card {
+    width: 100%;
+    max-width: 300px; /* Maximum width to keep the card size reasonable */
+    box-shadow: 0 2px 7px #dfdfdf;
+    background: #fafafa;
+    margin: 0 auto; /* Center the card */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent content from overflowing */
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 12px; /* Adjusted font size */
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 8px; /* Adjusted padding */
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px; /* Adjusted height */
+    padding: 10px; /* Adjusted padding */
+}
+
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures image fits well */
+}
+
+.product-details {
+    padding: 15px; /* Adjusted padding */
+}
+
+.product-catagory {
+    font-size: 14px; /* Adjusted font size */
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #666; /* Adjusted color */
+    margin-bottom: 10px; /* Adjusted margin */
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    margin-bottom: 10px; /* Adjusted margin */
+    text-transform: none; /* Removed uppercase transformation */
+    color: #333; /* Adjusted color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: #fbb72c;
+}
+
+.product-details p {
+    font-size: 14px; /* Adjusted font size */
+    line-height: 20px; /* Adjusted line height */
+    margin-bottom: 10px; /* Adjusted margin */
+    color: #777; /* Adjusted color */
+}
+
+.product-bottom-details {
+    border-top: 1px solid #eee;
+    padding-top: 10px; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    font-size: 16px; /* Adjusted font size */
+    color: #fbb72c;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 75%; /* Adjusted font size */
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    margin-left: 8px; /* Adjusted margin */
+    color: #666; /* Adjusted color */
+    transition: color 0.3s;
+    font-size: 18px; /* Adjusted font size */
+}
+
+.product-links a:hover {
+    color: #fbb72c;
+}
+
+.icon {
+    color: #666; /* Default color for icons */
+    font-size: 18px; /* Adjusted icon size */
+    transition: color 0.3s;
+}
+
+.product-links a:hover .icon {
+    color: #fbb72c; /* Color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .product-card {
+        width: 100%; /* Full width on smaller screens */
+        max-width: none; /* Remove max-width constraint */
+    }
+
+    .product-tumb {
+        height: 200px; /* Adjust height for smaller screens */
+        padding: 5px; /* Adjust padding */
+    }
+
+    .product-details {
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .product-bottom-details {
+        flex-direction: column; /* Stack price and links vertically */
+        text-align: center;
+    }
+}
