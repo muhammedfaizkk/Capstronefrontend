@@ -4,8 +4,7 @@ import { FaHeart, FaShoppingCart } from 'react-icons/fa'; // Import React Icons
 
 const ProductCard = () => {
     return (
-
-        <div className="product-card">
+        <div className="product-card position-relative">
             <div className="badge">Hot</div>
             <div className="product-tumb">
                 <img src="https://i.imgur.com/xdbHo4E.png" alt="Product" />
@@ -13,7 +12,6 @@ const ProductCard = () => {
             <div className="product-details">
                 <span className="product-catagory">Women, bag</span>
                 <h4><a href="#">Women Leather Bag</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
                 <div className="product-bottom-details">
                     <div className="product-price"><small>$96.00</small>$230.99</div>
                     <div className="product-links">
@@ -23,8 +21,6 @@ const ProductCard = () => {
                 </div>
             </div>
         </div>
-
-
     );
 };
 

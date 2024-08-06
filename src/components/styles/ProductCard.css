@@ -1,6 +1,5 @@
 .product-card {
-    width: 100%;
-    max-width: 300px; /* Maximum width to keep the card size reasonable */
+    max-width: 300px; 
     box-shadow: 0 2px 7px #dfdfdf;
     background: #fafafa;
     margin: 0 auto; /* Center the card */
@@ -32,7 +31,6 @@
 .product-tumb img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover; /* Ensures image fits well */
 }
 
 .product-details {
@@ -115,10 +113,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 767.98px) {
-    .product-card {
-        width: 100%; /* Full width on smaller screens */
-        max-width: none; /* Remove max-width constraint */
-    }
+ 
 
     .product-tumb {
         height: 200px; /* Adjust height for smaller screens */
@@ -129,8 +124,5 @@
         padding: 10px; /* Adjusted padding */
     }
 
-    .product-bottom-details {
-        flex-direction: column; /* Stack price and links vertically */
-        text-align: center;
-    }
+    
 }
