@@ -11,10 +11,17 @@ import {
 import { Col, Container, Row, Button, Modal, Dropdown } from 'react-bootstrap';
 import ProductCard from '../components/ProductCard';
 import './styles/shop.css'; // Ensure your custom styles are imported
+import { useNavigate } from 'react-router-dom';
 
 export default function Shop() {
   const [iconsActive, setIconsActive] = useState('all');
   const [showFilterModal, setShowFilterModal] = useState(false);
+
+  const navigate = useNavigate()
+
+  const navigateProductd = ()=>{
+    navigate('../productdetails')
+  }
 
   const handleIconsClick = (value) => {
     if (value === iconsActive) {
@@ -104,10 +111,10 @@ export default function Shop() {
               <MDBTabsPane open={iconsActive === 'all'}>
                 <Row className="g-4">
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <div className="product-card position-relative">
+                    <div className="product-card position-relative" onClick={navigateProductd}>
                       <div className="badge">Hot</div>
                       <div className="product-tumb">
-                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                        <img src="./images/products/product1.jpg" alt="Product" />
                       </div>
                       <div className="product-details">
                         <span className="product-catagory">Women, bag</span>
@@ -123,10 +130,10 @@ export default function Shop() {
                     </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <div className="product-card position-relative">
+                    <div className="product-card position-relative" onClick={navigateProductd}>
                       <div className="badge">Hot</div>
                       <div className="product-tumb">
-                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                        <img src="./images/products/product1.jpg" alt="Product" />
                       </div>
                       <div className="product-details">
                         <span className="product-catagory">Women, bag</span>
@@ -142,10 +149,10 @@ export default function Shop() {
                     </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <div className="product-card position-relative">
+                    <div className="product-card position-relative" onClick={navigateProductd}>
                       <div className="badge">Hot</div>
                       <div className="product-tumb">
-                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                        <img src="./images/products/product1.jpg" alt="Product" />
                       </div>
                       <div className="product-details">
                         <span className="product-catagory">Women, bag</span>
@@ -161,10 +168,10 @@ export default function Shop() {
                     </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <div className="product-card position-relative">
+                    <div className="product-card position-relative" onClick={navigateProductd}>
                       <div className="badge">Hot</div>
                       <div className="product-tumb">
-                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                        <img src="./images/products/product1.jpg" alt="Product" />
                       </div>
                       <div className="product-details">
                         <span className="product-catagory">Women, bag</span>
@@ -184,10 +191,10 @@ export default function Shop() {
               <MDBTabsPane open={iconsActive === 'products'}>
                 <Row className="g-4">
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <div className="product-card position-relative">
+                    <div className="product-card position-relative" onClick={navigateProductd}>
                       <div className="badge">Hot</div>
                       <div className="product-tumb">
-                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                        <img src="./images/products/product1.jpg" alt="Product" />
                       </div>
                       <div className="product-details">
                         <span className="product-catagory">Women, bag</span>
@@ -203,10 +210,10 @@ export default function Shop() {
                     </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <div className="product-card position-relative">
+                    <div className="product-card position-relative" onClick={navigateProductd}>
                       <div className="badge">Hot</div>
                       <div className="product-tumb">
-                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                        <img src="./images/products/product1.jpg" alt="Product" />
                       </div>
                       <div className="product-details">
                         <span className="product-catagory">Women, bag</span>
@@ -226,10 +233,10 @@ export default function Shop() {
               <MDBTabsPane open={iconsActive === 'accessories'}>
                 <Row className="g-4">
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <div className="product-card position-relative">
+                    <div className="product-card position-relative" onClick={navigateProductd}>
                       <div className="badge">Hot</div>
                       <div className="product-tumb">
-                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                        <img src="./images/products/product1.jpg" alt="Product" />
                       </div>
                       <div className="product-details">
                         <span className="product-catagory">Women, bag</span>
@@ -245,10 +252,10 @@ export default function Shop() {
                     </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <div className="product-card position-relative">
+                    <div className="product-card position-relative" onClick={navigateProductd}>
                       <div className="badge">Hot</div>
                       <div className="product-tumb">
-                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                        <img src="./images/products/product1.jpg" alt="Product" />
                       </div>
                       <div className="product-details">
                         <span className="product-catagory">Women, bag</span>
@@ -264,10 +271,10 @@ export default function Shop() {
                     </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <div className="product-card position-relative">
+                    <div className="product-card position-relative" onClick={navigateProductd}>
                       <div className="badge">Hot</div>
                       <div className="product-tumb">
-                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                        <img src="./images/products/product1.jpg" alt="Product" />
                       </div>
                       <div className="product-details">
                         <span className="product-catagory">Women, bag</span>
@@ -283,10 +290,10 @@ export default function Shop() {
                     </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <div className="product-card position-relative">
+                    <div className="product-card position-relative" onClick={navigateProductd}>
                       <div className="badge">Hot</div>
                       <div className="product-tumb">
-                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                        <img src="./images/products/product1.jpg" alt="Product" />
                       </div>
                       <div className="product-details">
                         <span className="product-catagory">Women, bag</span>

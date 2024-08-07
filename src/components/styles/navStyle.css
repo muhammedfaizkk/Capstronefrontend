@@ -30,16 +30,14 @@
     position: static !important;
 }
 
-/* About-specific styles */
-.about-nav {
-    /* Add any additional styles for the About route if needed */
-}
+
 
 /* Logo styling */
 .nav-logo {
     width: 200px;
     height: auto;
     overflow: hidden;
+    cursor: pointer;
 }
 
 /* Navbar link styles */
