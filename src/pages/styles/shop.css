@@ -1,4 +1,37 @@
-/* shop.css */
+.custom-dropdown-toggle {
+  background-color: #333;
+  padding: 7px 20px;
+  transition: background-color 0.3s ease;
+}
+.filterbutton{
+  background-color: #333;
+}
+
+.custom-dropdown-toggle:hover {
+  background-color: #444;
+}
+
+.custom-dropdown-menu {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.custom-dropdown-item {
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-dropdown-item:hover {
+  background-color: #555;
+}
+
+.custom-dropdown-item.active {
+  background-color: #444;
+  font-weight: bold;
+}
 
 .shop-page {
     min-height: 100vh;

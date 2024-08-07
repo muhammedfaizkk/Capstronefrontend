@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaHeart, FaShoppingCart } from 'react-icons/fa'; // Import React Icons
 import {
   MDBIcon,
   MDBTabs,
@@ -60,18 +61,30 @@ export default function Shop() {
 
             <div className="d-block d-sm-none">
               <Dropdown>
-                <Dropdown.Toggle variant="dark" id="dropdown-basic">
-                  Categories
+                <Dropdown.Toggle variant="dark" id="dropdown-basic" className="custom-dropdown-toggle">
+                  <MDBIcon fas icon='bars' className='me-2' /> Categories
                 </Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                  <Dropdown.Item onClick={() => handleIconsClick('all')} active={iconsActive === 'all'}>
+                <Dropdown.Menu className="custom-dropdown-menu">
+                  <Dropdown.Item
+                    onClick={() => handleIconsClick('all')}
+                    active={iconsActive === 'all'}
+                    className="custom-dropdown-item"
+                  >
                     <MDBIcon fas icon='tags' className='me-2' /> All
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleIconsClick('products')} active={iconsActive === 'products'}>
+                  <Dropdown.Item
+                    onClick={() => handleIconsClick('products')}
+                    active={iconsActive === 'products'}
+                    className="custom-dropdown-item"
+                  >
                     <MDBIcon fas icon='box' className='me-2' /> Products
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleIconsClick('accessories')} active={iconsActive === 'accessories'}>
+                  <Dropdown.Item
+                    onClick={() => handleIconsClick('accessories')}
+                    active={iconsActive === 'accessories'}
+                    className="custom-dropdown-item"
+                  >
                     <MDBIcon fas icon='star' className='me-2' /> Accessories
                   </Dropdown.Item>
                 </Dropdown.Menu>
@@ -79,7 +92,7 @@ export default function Shop() {
             </div>
           </Col>
           <Col className="text-md-end d-flex justify-content-end">
-            <Button variant="dark" onClick={handleFilterModal}>
+            <Button className='filterbutton' onClick={handleFilterModal}>
               Filter
             </Button>
           </Col>
@@ -91,42 +104,202 @@ export default function Shop() {
               <MDBTabsPane open={iconsActive === 'all'}>
                 <Row className="g-4">
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard />
+                    <div className="product-card position-relative">
+                      <div className="badge">Hot</div>
+                      <div className="product-tumb">
+                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                      </div>
+                      <div className="product-details">
+                        <span className="product-catagory">Women, bag</span>
+                        <h4><a href="#">Women Leather Bag</a></h4>
+                        <div className="product-bottom-details">
+                          <div className="product-price"><small>$96.00</small>$230.99</div>
+                          <div className="product-links">
+                            <a href="#"><FaHeart className="icon" /></a>
+                            <a href="#"><FaShoppingCart className="icon" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard />
+                    <div className="product-card position-relative">
+                      <div className="badge">Hot</div>
+                      <div className="product-tumb">
+                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                      </div>
+                      <div className="product-details">
+                        <span className="product-catagory">Women, bag</span>
+                        <h4><a href="#">Women Leather Bag</a></h4>
+                        <div className="product-bottom-details">
+                          <div className="product-price"><small>$96.00</small>$230.99</div>
+                          <div className="product-links">
+                            <a href="#"><FaHeart className="icon" /></a>
+                            <a href="#"><FaShoppingCart className="icon" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard />
+                    <div className="product-card position-relative">
+                      <div className="badge">Hot</div>
+                      <div className="product-tumb">
+                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                      </div>
+                      <div className="product-details">
+                        <span className="product-catagory">Women, bag</span>
+                        <h4><a href="#">Women Leather Bag</a></h4>
+                        <div className="product-bottom-details">
+                          <div className="product-price"><small>$96.00</small>$230.99</div>
+                          <div className="product-links">
+                            <a href="#"><FaHeart className="icon" /></a>
+                            <a href="#"><FaShoppingCart className="icon" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard />
+                    <div className="product-card position-relative">
+                      <div className="badge">Hot</div>
+                      <div className="product-tumb">
+                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                      </div>
+                      <div className="product-details">
+                        <span className="product-catagory">Women, bag</span>
+                        <h4><a href="#">Women Leather Bag</a></h4>
+                        <div className="product-bottom-details">
+                          <div className="product-price"><small>$96.00</small>$230.99</div>
+                          <div className="product-links">
+                            <a href="#"><FaHeart className="icon" /></a>
+                            <a href="#"><FaShoppingCart className="icon" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Col>
                 </Row>
               </MDBTabsPane>
               <MDBTabsPane open={iconsActive === 'products'}>
                 <Row className="g-4">
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard />
+                    <div className="product-card position-relative">
+                      <div className="badge">Hot</div>
+                      <div className="product-tumb">
+                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                      </div>
+                      <div className="product-details">
+                        <span className="product-catagory">Women, bag</span>
+                        <h4><a href="#">Women Leather Bag</a></h4>
+                        <div className="product-bottom-details">
+                          <div className="product-price"><small>$96.00</small>$230.99</div>
+                          <div className="product-links">
+                            <a href="#"><FaHeart className="icon" /></a>
+                            <a href="#"><FaShoppingCart className="icon" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard />
+                    <div className="product-card position-relative">
+                      <div className="badge">Hot</div>
+                      <div className="product-tumb">
+                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                      </div>
+                      <div className="product-details">
+                        <span className="product-catagory">Women, bag</span>
+                        <h4><a href="#">Women Leather Bag</a></h4>
+                        <div className="product-bottom-details">
+                          <div className="product-price"><small>$96.00</small>$230.99</div>
+                          <div className="product-links">
+                            <a href="#"><FaHeart className="icon" /></a>
+                            <a href="#"><FaShoppingCart className="icon" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Col>
                 </Row>
               </MDBTabsPane>
               <MDBTabsPane open={iconsActive === 'accessories'}>
                 <Row className="g-4">
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard />
+                    <div className="product-card position-relative">
+                      <div className="badge">Hot</div>
+                      <div className="product-tumb">
+                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                      </div>
+                      <div className="product-details">
+                        <span className="product-catagory">Women, bag</span>
+                        <h4><a href="#">Women Leather Bag</a></h4>
+                        <div className="product-bottom-details">
+                          <div className="product-price"><small>$96.00</small>$230.99</div>
+                          <div className="product-links">
+                            <a href="#"><FaHeart className="icon" /></a>
+                            <a href="#"><FaShoppingCart className="icon" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard />
+                    <div className="product-card position-relative">
+                      <div className="badge">Hot</div>
+                      <div className="product-tumb">
+                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                      </div>
+                      <div className="product-details">
+                        <span className="product-catagory">Women, bag</span>
+                        <h4><a href="#">Women Leather Bag</a></h4>
+                        <div className="product-bottom-details">
+                          <div className="product-price"><small>$96.00</small>$230.99</div>
+                          <div className="product-links">
+                            <a href="#"><FaHeart className="icon" /></a>
+                            <a href="#"><FaShoppingCart className="icon" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard />
+                    <div className="product-card position-relative">
+                      <div className="badge">Hot</div>
+                      <div className="product-tumb">
+                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                      </div>
+                      <div className="product-details">
+                        <span className="product-catagory">Women, bag</span>
+                        <h4><a href="#">Women Leather Bag</a></h4>
+                        <div className="product-bottom-details">
+                          <div className="product-price"><small>$96.00</small>$230.99</div>
+                          <div className="product-links">
+                            <a href="#"><FaHeart className="icon" /></a>
+                            <a href="#"><FaShoppingCart className="icon" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Col>
                   <Col xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard />
+                    <div className="product-card position-relative">
+                      <div className="badge">Hot</div>
+                      <div className="product-tumb">
+                        <img src="./images/products/2 Way Angle Cock-bold x.jpg" alt="Product" />
+                      </div>
+                      <div className="product-details">
+                        <span className="product-catagory">Women, bag</span>
+                        <h4><a href="#">Women Leather Bag</a></h4>
+                        <div className="product-bottom-details">
+                          <div className="product-price"><small>$96.00</small>$230.99</div>
+                          <div className="product-links">
+                            <a href="#"><FaHeart className="icon" /></a>
+                            <a href="#"><FaShoppingCart className="icon" /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </Col>
                 </Row>
               </MDBTabsPane>
